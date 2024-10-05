@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import TrackItem from '../TrackItem/TrackItem';
 import SongPagesDisplayer from '../SongPagesDisplayer/SongPagesDisplayer';
 import InputSelectNumber from '../InputSelectNumber/InputSelectNumber';
-import { Input } from 'postcss';
 import MainCenteredWindow from '../MainCenteredWindow/MainCenteredWindow';
 
 const PlaylistPreviewPage: React.FC = () => {
