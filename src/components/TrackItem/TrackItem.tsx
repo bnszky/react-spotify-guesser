@@ -22,6 +22,7 @@ const TrackItem = ({ track, onClick }: TrackItemProps) => {
   useEffect(() => {
     const audio = audioRef.current;
     if (audio) {
+      audio.volume = 0.1;
       const updateProgress = () => {
         setProgress((audio.currentTime / audio.duration) * 100);
       };

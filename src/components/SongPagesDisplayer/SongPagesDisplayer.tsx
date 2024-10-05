@@ -45,8 +45,8 @@ const SongPagesDisplayer: React.FC<SongPagesDisplayerProps> = ({ tracks }) => {
     }, [currentPage]);
 
     return (
-        <div className="flex flex-col gap-3 p-3">
-            <h2>Your songs: </h2>
+        <div className="flex flex-col gap-3 p-3 w-3/4">
+            <h2>Fetched {tracks.length} songs: </h2>
             {currentTracks.map((track: Track) => <TrackItem key={track.id} track={track} onClick={() => {}} />)}
             <div className="flex gap-3 justify-center my-5">
                 <button
